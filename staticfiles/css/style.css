@@ -1,4 +1,4 @@
-
+    /*make background black*/
     .bdy-color {
         background-color: black;
     }
@@ -28,7 +28,7 @@
         color: darkcyan;
         font-weight: bold;
     }
-    .about-title, .projects-title, .services-title, .contact-title {
+    .basic-style {
         color: darkcyan;
         text-decoration: underline;
     }
@@ -51,11 +51,7 @@
         color: rgb(34, 33, 33);
         border-bottom-width: 2px;
     }
-    .card-header {
-        color: darkCyan;
-        font-style: bold;
-        text-decoration: underline;
-    }
+    /*make text dark-red*/
     .first-card {
         color: darkred;
     }
@@ -69,16 +65,19 @@
     .new-card {
         background-color: rgb(228, 226, 226);
     }
+    /*apply maroon color to text*/
     .check {
         color: maroon;
     }
     .first-div {
         margin: 2.5px 2.5px 2.5px 2.5px;
     }
+    /*italicise an text*/
     .new-p {
         font-style: italic;
     }
-    .new-h, .new-r, .new-g, .new-f, .new-v {
+    /*underline text*/
+    .new-standtxt {
         text-decoration: underline;
     }
     .img-api {
