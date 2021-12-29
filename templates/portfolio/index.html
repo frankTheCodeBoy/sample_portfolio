@@ -1,0 +1,16 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block title_block %}
+    Index
+{% endblock %}
+{% block body_block %}
+<div class="bdy-color">
+   <img src="{% static 'images/coverpicture.png' %}">
+</div>
+<div>
+   <a 
+   class="btn btn-block btn-lg btn-primary" 
+   href="#" role="button">View My Work &raquo;
+   </a>
+</div>
+{% endblock %}

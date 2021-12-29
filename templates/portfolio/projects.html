@@ -1,0 +1,95 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    Projects
+{% endblock %}
+
+{% block body_block %}
+<div class="first-div">
+    <h1 class="display-4 projects-title"><strong>Projects.</strong></h1>
+    <p class="new-p">This page explores both simple and complex projects that I
+    have successfully completed.</p>
+    <div>
+      <h5 class="mark-one"> 1).<span 
+        class="new-h">REAL-TIME API DATA VISUALISATION.</span></h5>
+      <p>
+          The concept of working efficiently with the API of a particular
+          technology is what this project demonstrates. This includes the 
+          following steps:- accessing the API and making an API call via 
+          Python's request object, verifying and translating the data returned,
+          and using Python's Plotly module to analyse and create a visualisation
+          of this data.
+          <br>
+          The result is a neat graph with active links showing real-time data 
+          at that moment. Below is one such graph which shows real-time data in 
+          the form of "top news headlines in the USA". Each time the code is
+          run, the graph updates to showthe most current news articles.
+          I was able to accomplish this by working with the <i>NEWS API</i> and 
+          by using a unique API-key. Below is the resulting visualisation.
+          My code can quickly be accessed in my <a href="#">GitHub repository.
+          </a><br>
+          There is a similar visualisation to this one, drawn alongside. It was
+          generated using data from <i>HACKER NEWS API</i>. At any instance of 
+          running code, it will show the most commented topics in Hacker News 
+          at that moment. For both these visualisations, the links on the 
+          graphs once clicked, will navigate to the actual article. 
+      </p>
+      <div>
+        <img class="img-api" src="{% static 'images/top_usa_news.html.png' %}">
+        <img class="img-disc" src="{% static 'images/hn_discussions.html.png' %}">
+      </div>  
+    </div>
+    <div>
+      <h5 class="mark-two"> 2). <span class="new-r">
+      A BOOK-MARKING WEB APPLICATION.</span></h5>
+      <p>
+        This entry features a book-marking django web application which allows 
+        users the ability to like 'Categories' and add 'Pages' to specific 
+        select categories. Python is used alongside JavaScript, JQuery,
+        and AJAX in order to implement and simulate dynamic features.<br>
+        Authenticated users can freely interact with all features of the site 
+        which include but not limited to:- profile accounts with enabled 
+        profile-image uploads, personal website entries, viewing of other user
+        profiles, and bio-message displays.<br>
+        Styling was accomplished by custom CSS and Bootstrap4 application.
+        Testing and debugging was done prior to deployment of the application
+        online.<br>
+        The application is fully-functional, readily accessible online, and goes
+        by the name <a href="#">"Page-House"</a>. The copyright seal is also 
+        denoted on the 'About Page' of the app.
+      </p>
+    </div>
+    <div>
+      <h5 class="mark-three"> 3). <span class="new-g">
+        A PYGAME WITH PYTHON.
+      </span></h5>
+      <p>
+        This is a game development project of a 2-D game built using Pygame, 
+        a Python module. The game was created and designed using Python's 
+        native class objects, and by consistently splitting code into manageable
+        potions for further development. Writing this game offered me an 
+        opportunity to enhance my game development and problem-solving skills.
+        I had to grapple with the many challenges I faced, climb over huddles to
+        create a working, playable game. I have titled this game as 
+        'Game Character'; a particular game object (the player) combats enemy
+        ships moving in a systematic manner up, down, and across the screen. 
+        The game features escalating levels, a scoring system, an updated high 
+        score and limited player-lives. I enhanced it by introducing sound and 
+        music effects using Pygame Mixer module.
+      </p>
+      <p>
+        I have included snapshots of my program including a short video file to
+        demonstrate my works. My program code for this game can also be accessed
+        in my GitHub repository to which I am <a href="#">linking here.</a>
+      </p>
+    <div>
+        <video src="{% static 'videos/VideoDemo.mp4' %}"
+        width="400" height="300" preload="none" controls>  
+        </video>
+    </div>
+    
+    </div>
+</div>
+{% endblock %}
+

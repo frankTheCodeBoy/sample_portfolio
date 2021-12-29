@@ -1,0 +1,79 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+<div class="jumbotron my-container">
+    <h1 class="display-4 about-title"><strong>About Me:</strong></h1>
+    <p class="lead">
+        Hi, my name is Frank Olum and I work remotely as a programmer
+        and data analyst. With my expertise as a programmer and full-stack
+        developer, I know exactly the most practical and efficient 
+        tech-solution for your business needs.
+    </p>
+    <p class="lead">
+        I have adequate experience applying a variety of programming
+        and data science techniques in:- solving coding problems,
+        building transferable machine learning algorithms, visualising 
+        and analysing large datasets. I write code in Python, JavaScript,
+        Java, and also implement server-side languages such as PHP, NodeJS,
+        and MySQL. I understand a variety of different development frameworks
+        and their relevant implementation toward various development needs. 
+    </p>
+    <p class="lead">
+        I have dedicatedly developed the necessary skill set required in 
+        building cutting-edge applications, and industry-standard innovations.
+        As a fact, I always enjoyed solving puzzles from a young age; this
+        has been my source of motivation. Your satisfaction is my main
+        pursuit and objective.
+        I do hope we can work together.
+    </p>
+</div>
+<div>
+    <img class="img-prog" src="{% static 'images/programmer.jpg' %}" 
+        alt="programmer">
+    <p class="text-center desc">Image-desc: "programmer"</p>
+</div>
+<div class="card mb-3 my-card">
+    <h3 class="card-header first-card"><strong>PORTFOLIO:</strong></h3>
+    <div class="card-body">
+        <div class="pop-up"></div>
+        <div class="t-font"><span class="check">✪</span> 
+            <a href="#"> A BOOK-MARKING WEB APPLICATION</a></div>
+        <div class="t-font"><span class="check">✪</span> 
+            <a href="#"> REAL-TIME API DATA VISUALISATION</a></div>
+        <div class="t-font"><span class="check">✪</span> 
+            <a href="#"> PROJECT LEARNING LOG</a></div>
+        <div class="t-font"><span class="check">✪</span> 
+            <a href="#"> AN ANDROID APPLICATION</a></div>
+        <div class="t-font"><span class="check">✪</span> 
+            <a href="#"> A SOCIAL NETWORKING WEBSITE</a></div>
+        <div class="t-font"><span class="check">✪</span> 
+            <a href="#"> A 2D PYGAME WITH PYTHON</a></div>
+        <div class="t-font"><span class="check">✪</span> 
+            <a href="#"> GLOBAL DATASETS VISUALISATION</a></div>
+        <div class="t-font"><span class="check">✪</span> 
+            <a href="#"> MACHINE LEARNING DATA MODELS</a></div>
+    </div>
+</div>
+<div class="card mb-3 my-card">
+    <h3 class="card-header"><strong>KNOWLEDGE & SKILL-SET:</strong></h3>
+    <div class="card-body new-card">
+        <div class="n-font">✔️ CLIENT-SIDE TECHNOLOGIES: HTML, CSS, JAVASCRIPT & JQUERY</div>
+        <div class="n-font">✔️ SERVER-SIDE TECHNOLOGIES: PHP, MYSQL, NODEJS</div>
+        <div class="n-font">✔️ PYTHON PROGRAMMING</div>
+        <div class="n-font">✔️ JAVA PROGRAMMING</div>
+        <div class="n-font">✔️ ANDROID DEVELOPMENT</div>
+        <div class="n-font">✔️ FRAMEWORKS: DJANGO, BOOTSTRAP</div>
+        <div class="n-font">✔️ PYTHON DATA ANALYSIS, VISUALISATION</div>
+        <div class="n-font">✔️ MACHINE LEARNING ANALYTICS</div>
+        <div class="n-font">✔️ GAME DEVELOPMENT</div>
+        <div class="n-font">✔️ WORDPRESS</div>
+        <div class="n-font">✔️ GIT AND GITHUB</div>
+  </div>
+</div>
+
+{% endblock %}

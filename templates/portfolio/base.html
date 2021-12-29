@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+        shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">  
+    <title>
+        Data-with-Programming:-
+        {% block title_block %}
+        {% endblock %}
+    </title>
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    <style type="text/css">
+        .bdy-color {
+            background-color: black;
+        }
+        .btn {
+            margin: 5px 5px 5px 5px;
+        }
+        .t-indent {
+            text-indent: 65px;
+        }
+        .mark-one {
+            color: red;
+        }
+        .mark-two {
+            color: rgb(53, 2, 2);
+        }
+        .mark-three {
+            color: navy;
+        }
+        .about-title, .projects-title, .services-title, .contact-title {
+            color: darkcyan;
+            text-decoration: underline;
+        }
+        .my-container {
+            float: left; width: 60%;
+            height: 610px;
+        }
+        .img-prog {
+            float: right; width: 40%;
+            height: 590px;
+        }
+        .my-card {
+            float: left; width: 100%;
+        }
+        .desc {
+            font-style: italic;
+            color: darkred;
+        }
+        .t-font {
+            color: rgb(34, 33, 33);
+            border-bottom-width: 2px;
+        }
+        .card-header {
+            color: darkCyan;
+            font-style: bold;
+            text-decoration: underline;
+        }
+        .first-card {
+            color: darkred;
+        }
+        p {
+            color: black;
+        }
+        .n-font {
+            margin-bottom: 2px;
+            color: black;
+        }
+        .new-card {
+            background-color: rgb(228, 226, 226);
+        }
+        .check {
+            color: maroon;
+        }
+        .first-div {
+            margin: 2.5px 2.5px 2.5px 2.5px;
+        }
+        .new-p {
+            font-style: italic;
+        }
+        .new-h, .new-r, .new-g {
+            text-decoration: underline;
+        }
+        .img-api {
+            float: left; width: 50%;
+        }
+        .img-disc {
+            float: right; width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 border">
+    <li class="navbar-brand">
+        <span class="mark-one"><strong>Frank Olum</strong></span><br>
+        <span>
+            <strong>Programming and Data Science.</strong>
+        </span>
+    </li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto t-indent">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio:index' %}">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio:about' %}">
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio:projects' %}">
+                    Projects
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio:contact' %}">
+                    Hire-Me
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'portfolio:services' %}">
+                    "What I Can Do For You"
+                </a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+    {% block body_block %}
+    {% endblock %}
+    <footer class="page-footer font-small black">
+        <div class="footer-copyright text-center py-3">
+            Frank Olum © 2021<br />
+        <small class="text-muted">
+            All rights reserved.
+        </small>
+      </div>
+    </footer>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
