@@ -28,6 +28,10 @@
         color: darkcyan;
         font-weight: bold;
     }
+    .mark-six {
+        color: rgb(53, 53, 250);
+        font-weight: bold;
+    }
     .basic-style {
         color: darkcyan;
         text-decoration: underline;

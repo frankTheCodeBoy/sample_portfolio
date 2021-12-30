@@ -126,9 +126,27 @@
         VISUALISING GLOBAL DATASETS.</span></h5>
       <p>
         This section depicts striking visualisations of recent global earthquakes
-        in the scale of 1.0 and above, generated using Plotly.
+        in the scale of 1.0 and above, generated using Plotly. The methodology 
+        used involved analysing geo-json earthquake data using Python's objects
+        and modules.<br>
+        Plotly's Graph Object enabled useful access to Scattergeo and Layout 
+        which were used to generate the world map. The relevant data to be
+        plotted was obtained by extracting relevant features from json data,
+        and appending them into Python-lists. The output is as shown below.
       </p>
+      <p>
+        Hovering the cursor over the colored dots on the map, allows a label to
+        pop-up highlighting relevant information in a useful way. 
+        The size of the dots correspond to the earthquake magnitude in 
+        that location.<br>
+        The color-scale used here, <i>"Viridus"</i>, was deliberately chosen in
+        order to highlight the map in a theme suited to earthquakes. 
+        The background code for this work can be found in this 
+        <a href="#">repository.</a>   
+      </p>
+      <img src="{% static 'images/largescale_earthquakes.html.png' %}">
     </div>
+    
 </div>
 {% endblock %}
 
