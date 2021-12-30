@@ -2,6 +2,10 @@
     .bdy-color {
         background-color: black;
     }
+    /*make body grey*/
+    .bdy-grey {
+        background-color: gray;
+    }
     .btn {
         margin: 5px 5px 5px 5px;
     }
@@ -34,6 +38,10 @@
     }
     .mark-seven {
         color: rgb(62, 1, 88);
+        font-weight: bold;
+    }
+    .mark-eight {
+        color: darkgreen;
         font-weight: bold;
     }
     .basic-style {
@@ -78,7 +86,7 @@
         color: maroon;
     }
     .first-div {
-        margin: 2.5px 2.5px 2.5px 2.5px;
+        margin: 2.5px 2.5px 2.5px 4px;
     }
     /*italicise an text*/
     .new-p {
@@ -104,3 +112,71 @@
         width: 50%;
         height: 350px;
     }
+    .machine-one {
+        float: left;
+        width: 50%;
+        height: 360px;
+    }
+    .machine-two {
+        float: right;
+        width: 50%;
+        height: 360px;
+
+    }
+    .machine-three {
+        text-align: center;
+    }
+    .contact-div {
+        text-align: center;
+    }
+    .tel-img {
+        width: 54px;
+        height: 36px;
+    }
+    .mail-img {
+        width: 45px;
+        height: 30px;
+    }
+    .loc-img {
+        width: 25px;
+        height: 25px;
+    }
+    .tel-div {
+        margin: 5px;
+    }
+    .mail-div {
+        margin: 5px;
+    }
+    .loc-div {
+        margin: 5px;
+    }
+    .hire-me {
+        text-align: center;
+    }
+    /*apply colors to font*/
+    .sky {
+        color: navy;
+    }
+    .dragon-fly {
+        color: red;
+    }
+    .mood-init {
+        color: darkolivegreen;
+    }
+    .green-tea {
+        color: rgb(119, 82, 3);
+    }
+    /*other styles*/
+    .services-div {
+        background-color: burlywood;
+        color: darkslategrey;
+        text-align: center;
+        font-style: italic;
+        padding: 3px;
+    }
+    .t-underline {
+        text-decoration: underline;
+    } /*underline text*/
+    .t-oblique {
+        font-style: oblique;
+    } /*make text oblique*/

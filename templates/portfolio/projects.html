@@ -101,7 +101,7 @@
     </div>
     <div>
       <h5 class="mark-four"> 4). <span class="new-standtxt">
-        THE LEARNING LOG PROJECT.</span></h5>
+        THE LEARNING-LOG PROJECT.</span></h5>
       <p>This project is again a live web application built with Python and Django 
       framework. The application serves as an online journal for daily activity
       entry. Users register and create accounts to actively use it. The application 
@@ -161,7 +161,7 @@
         user-settings, preferences, and tracks user-scores. With the collective 
         technologies of Eclipse and Android Studio, I cross-tested it across 
         multiple-device simulations and also deployed it in my own android device.
-        The apk for this application is accessible from this <a href="#">link.</a> 
+        The <i>apk</i> for this application is accessible from this <a href="#">link.</a> 
         It can be readily installed and run on any available android device.
       </p>
     </div>
@@ -189,6 +189,70 @@
         with the SSL certificate issued by the hosting company, and has nothing 
         to do with the Link Street networking-app itself.  
       </p>
+    </div>
+    <div>
+      <h5 class="mark-eight"> 8). <span class="new-standtxt">
+        MACHINE LEARNING DATA ANALYTICS.
+      </span></h5>
+      <p>
+        Creating machine algorithms and models that work well, usually involves 
+        combining the processess of data visualisation and data analysis. 
+        In this section, Python library and modules were used to mould machine 
+        models from validated and tested algorithms. Here I have included 
+        illustrations of some models that were trained and tested on various 
+        datasets involving both Supervised and Unsupervised learning problems.
+        <br>
+        The first illustration shown below applies simple linear regression 
+        toward solving a supervised problem. The dataset was a CSV format data
+        containing varying salaries for various years in experience. The dataset
+        was split into train and test sets using the train-test-split function 
+        from the Sklearn module. The dataset was fitted into the training set
+        and testing set, and visualisations drawn from these. It performed well
+        as shown in the charts below <i>(the same performance was depicted
+        when the model was tested on new data).</i><br>
+        The complete code for this analysis can be downloaded from this 
+        <a href="#">repository.</a>
+      </p>
+      <div>
+        <img class="machine-one" src="{% static 'images/linear_regA.png' %}">
+        <img class="machine-two" src="{% static 'images/linear_regB.png' %}">
+      </div>
+      <p>
+        The next block of diagrams demonstrate the implementation of K-Nearest
+        Neighbors in creating a model that solves Classification problem under
+        supervised learning. Initially, the K-Neighbors Classifier and the 
+        Confusion Matrix were imported from the Sklearn module. Feature scaling 
+        was applied to normalise the dataset after obtaining the train and 
+        test splits from the data. The dataset used was CSV data containing the
+        social status of different gender. The overall objective being to 
+        classify different individuals according to their spending pattern 
+        (either a '1' or '0') and tabulated salary.<br>
+        The model's performance was fairly good <i>(owing to the fact that
+        no model or data can achieve 100 percent perfection).</i> Slightly 
+        increasing the dataset size for our model could yield better results
+        with less anomalies. Below is the output obtained from the visualisations
+        of train and test sets. My dataset and codes for this work can still be
+        accessed from this <a href="#">repository.</a> 
+      </p>
+      <div>
+        <img class="machine-one" src="{% static 'images/k_n_n.png' %}">
+        <img class="machine-two" src="{% static 'images/k_n_n_test.png' %}">
+      </div>
+      <p>
+        This last section seeks to illustrate the development of an algorithm 
+        and a model to resolve unsupervised clustering problem. We examine a CSV 
+        data containing the spending scales of mall customers of different 
+        income levels. The machine model is developed in an attempt to help 
+        cluster and relevantly group customers which in turn helps to tailor
+        marketing strategies effectively for each study group. The WCSS and 
+        the Elbow method was used to obtain a suitable cluster number for this
+        analysis. Data was eventually plotted after pre-requisites were met.<br>
+        The summary output is as below. This <a href="#">link</a> provides access
+        to the complete methodology and code to illustrate this process.
+      </p>
+      <div class="machine-three">
+        <img src="{% static 'images/k_means.png' %}">
+      </div>
     </div>
 </div>
 {% endblock %}

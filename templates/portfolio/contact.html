@@ -6,7 +6,34 @@
 {% endblock %}
 
 {% block body_block %}
-<div class="container">
-    <h2 class="display-5 basic-style"><strong>Hire-Me?</strong></h2>    
+<div class="container hire-me">
+    <h2 class="display-5 basic-style"><strong>Hire-Me?</strong></h2>
+    <p class="new-p">
+    Are you looking for an expert, a talented individual who can
+    solve your tech-problem?<br>
+    Well, look no further. I have confidence that my expertise can
+    help shape up your business or project for the better. You can
+    always reach out to me in any of the following ways:-</p>
+    <div class="container contact-div"> 
+        <div class="tel-div">
+            <img class="tel-img" 
+            src="{% static 'images/tel-icon.png' %}">
+            <span class="check">
+                <strong>+254 734 633607 / +254 721 458751</strong>
+                </span>
+        </div>
+        <div class="mail-div">
+            <img class="mail-img" 
+            src="{% static 'images/mail-icon.png' %}">
+            <span class="sky">
+                <strong>
+                    <a href="https://www.gmail.com">Olumfrank48@gmail.com</a></strong></span>
+        </div>
+        <div class="loc-div">
+            <img class="loc-img" 
+            src="{% static 'images/location-vector-png.png' %}">
+            <span class="mood-init"><strong>Nairobi, Kenya</strong></span>
+        </div>
+    </div>    
 </div>
 {% endblock %}
