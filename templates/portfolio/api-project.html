@@ -1,0 +1,40 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    api-project
+{% endblock %}
+
+{% block body_block %}
+    <div class="container">
+        <h5 class="mark-one new-standtxt">REAL-TIME API DATA VISUALISATION.</h5>
+        <p>
+          The concept of working efficiently with the API of a particular
+          technology is what this project demonstrates. This includes the 
+          following steps:- accessing the API and making an API call via 
+          Python's request object, verifying and translating the data returned,
+          and using Python's Plotly module to analyse and create a visualisation
+          of this data.
+          <br>
+          The result is a neat graph with active links showing real-time data 
+          at that moment. Below is one such graph which shows real-time data in 
+          the form of "top news headlines in the USA". Each time the code is
+          run, the graph updates to showthe most current news articles.
+          I was able to accomplish this by working with the <i>NEWS API</i> and 
+          by using a unique API-key. Below is the resulting visualisation.
+          My code can quickly be accessed in my <a href="#">GitHub repository.
+          </a><br>
+          There is a similar visualisation to this one, drawn alongside. It was
+          generated using data from <i>HACKER NEWS API</i>. At any instance of 
+          running code, it will show the most commented topics in Hacker News 
+          at that moment. For both these visualisations, the links on the 
+          graphs once clicked, will navigate to the actual article. 
+        </p>
+        <div>
+            <img class="img-api" src="{% static 'images/top_usa_news.html.png' %}">
+            <img class="img-disc" src="{% static 'images/hn_discussions.html.png' %}">
+        </div>  
+
+
+    </div>
+{% endblock %}

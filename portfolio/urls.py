@@ -29,5 +29,10 @@ urlpatterns = [
         views.contact,
         name="contact",
     ),
+    path(
+        "api-project/",
+        views.api_project,
+        name="api_project",
+    ),
     
 ]

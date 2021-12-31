@@ -15,3 +15,6 @@ def services(request):
 
 def contact(request):
     return render(request, 'portfolio/contact.html', {})
+
+def api_project(request):
+    return render(request, 'portfolio/api-project.html', {})
