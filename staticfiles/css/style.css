@@ -177,3 +177,6 @@
     .t-oblique {
         font-style: oblique;
     } /*make text oblique*/
+    .el-span {
+        color: darkgoldenrod;
+    }
