@@ -1,0 +1,33 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    book-app
+{% endblock %}
+
+{% block body_block %}
+<div class="container">
+    <h5 class="mark-two new-standtxt">
+        A BOOK-MARKING WEB APPLICATION.
+    </h5>
+      <p>
+        This entry features a book-marking django web application which allows 
+        users the ability to like 'Categories' and add 'Pages' to specific 
+        select categories. Python is used alongside JavaScript, JQuery,
+        and AJAX in order to implement and simulate dynamic features.<br>
+        Authenticated users can freely interact with all features of the site 
+        which include but not limited to:- profile accounts with enabled 
+        profile-image uploads, personal website entries, viewing of other user
+        profiles, and bio-message displays.<br>
+        Styling was accomplished by custom CSS and Bootstrap4 application.
+        Testing and debugging was done prior to deployment of the application
+        online.<br>
+        The web application is fully-functional, readily accessible online, and 
+        goes by the name <i>'Page-House'.</i> The copyright seal is also denoted 
+        on the About-page.<br>
+        This <a href="https://frankolum.pythonanywhere.com">link</a> will lead 
+        directly to the web application. 
+      </p>
+</div>
+
+{% endblock %}

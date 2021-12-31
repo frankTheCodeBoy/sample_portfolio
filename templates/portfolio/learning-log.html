@@ -1,0 +1,32 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    learning-app
+{% endblock %}
+
+{% block body_block %}
+<div class="container">
+  <h5 class="mark-four new-standtxt">
+    THE LEARNING-LOG PROJECT.</h5>
+  <p>This project is again a live web application built with Python and Django 
+  framework. The application serves as an online journal for daily activity
+  entry. Users register and create accounts to actively use it. The application 
+  features topics; public and private topics, and entries which are added to
+  topics created. Users track their activities and learning progress by 
+  logging new topics and updating it with new ideas which appear in form
+  of entries unique to owners.<br>
+  Prior to deployment, necessary tests were conducted and git-tracking  was 
+  enabled consistently. Code was finally configured for production after the 
+  necessary migrations were conducted locally and on the server. This application 
+  which is named <i>'Learning Log'</i>, is currently active and can be directly
+  accessed through this <a href="#">link.</a>
+  </p>
+  <p class="new-p">
+    Point of note: depending on your network strength or location, the link
+    to the web application may take roughly 5 - 7 seconds to load up at first.
+    At the least, give it this minimum time limit.
+  </p>
+</div>
+
+{% endblock %}

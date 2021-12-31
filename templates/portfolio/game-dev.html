@@ -1,0 +1,49 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    game-dev
+{% endblock %}
+
+{% block body_block %}
+<div class="container">
+  <h5 class="mark-three new-standtxt">
+    A PYGAME WITH PYTHON.
+  </h5>
+  <p>
+    This is a game development project comprising of a 2-D game built using 
+    Pygame, a Python module. The game was created and designed using Python's 
+    native class objects, and by consistently splitting code into manageable
+    potions for further development. Writing this game offered me an 
+    opportunity to enhance my game development and problem-solving skills.
+    I had to grapple with the many challenges I faced, climb over huddles to
+    create a working, playable game. I have titled this game as <i>'Game 
+    Character'</i>; a particular game object (the player) combats enemy
+    ships moving in a systematic manner up, down, and across the screen. 
+    The game features escalating levels, a scoring system, an updated high 
+    score and limited player-lives. I enhanced it by introducing sound and 
+    music effects using Pygame Mixer module.
+  </p>
+  <p>
+    I have included a snapshot of my program and a short video file below 
+    to demonstrate my work. The complete code for this game can
+    be accessed in my GitHub repository to which I am <a href="#">
+    linking here.</a>
+  </p>
+  <div>
+    <video class="video" src="{% static 'videos/VideoDemo.mp4' %}"
+      width="400px" height="350px" preload="none" controls 
+      poster="{% static 'images/game_dev2.jpeg' %}">  
+    </video>
+    <img class="img-game" src="{% static 'images/game_dev.jpg' %}">
+  </div>
+  <p class="new-p">
+    Point of note: the video embedded is slightly shaky due to the fact
+    that I was recording the screen interface with one hand while 
+    simultaneously accessing the program and playing the game with my other 
+    hand. You could however play the clip in full-screen mode or download
+    it for improved clarity.
+  </p>
+</div>
+
+{% endblock %}
