@@ -24,7 +24,7 @@
     <li class="navbar-brand">
         <span class="mark-one"><strong>Frank Olum</strong></span><br>
         <span>
-            <strong>Programming and Data Science.</strong>
+            <strong>Programming & Data Science.</strong>
         </span>
     </li>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -33,28 +33,28 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto t-indent">
-            <li class="nav-item">
+        <ul class="navbar-nav mr-auto t-align">
+            <li class="nav-item t-indent">
                 <a class="nav-link" href="{% url 'portfolio:index' %}">
                     Home
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item t-indent">
                 <a class="nav-link" href="{% url 'portfolio:about' %}">
                     About
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item t-indent">
                 <a class="nav-link" href="{% url 'portfolio:projects' %}">
                     Projects
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item t-indent">
                 <a class="nav-link" href="{% url 'portfolio:contact' %}">
                     Hire-Me
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item t-indent">
                 <a class="nav-link" href="{% url 'portfolio:services' %}">
                     "What I Can Do For You"
                 </a>
@@ -62,9 +62,15 @@
         </ul>
     </div>
     </nav>
+    <main role="main" class="container">
+    <div class="pb-2 mb-2 border-bottom">
+      {% block page_header %}{% endblock page_header %}
+    </div>
+    <div>
     {% block body_block %}
     {% endblock %}
-    <footer class="page-footer font-small black">
+    </div>   
+    <footer class="page-footer font-small black clear">
         <div class="footer-copyright text-center py-3">
             Frank Olum © 2021<br />
         <small class="text-muted">
@@ -73,5 +79,6 @@
       </div>
     </footer>
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</main>
 </body>
 </html>

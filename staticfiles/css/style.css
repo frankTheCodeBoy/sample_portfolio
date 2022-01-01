@@ -1,16 +1,20 @@
-    /*make background black*/
+    /*make background black and
+    define container element.
+    */
     .bdy-color {
         background-color: black;
+        margin-right: auto;
+        margin-left: auto;
     }
     /*make body grey*/
     .bdy-grey {
         background-color: gray;
     }
-    .btn {
-        margin: 5px 5px 5px 5px;
-    }
     .t-indent {
-        text-indent: 65px;
+        margin-left: 40px;
+    }
+    .t-align {
+        text-align: center;
     }
     .mark-one {
         color: red;
@@ -49,12 +53,12 @@
         text-decoration: underline;
     }
     .my-container {
-        float: left; width: 60%;
-        height: 610px;
+        float: left; width: 45%;
+        height: auto;
     }
     .img-prog {
-        float: right; width: 40%;
-        height: 590px;
+        float: right; width: 45%;
+        height: auto;
     }
     .my-card {
         float: left; width: 100%;
@@ -94,33 +98,39 @@
         text-decoration: underline;
     }
     .img-api {
-        float: left; width: 50%;
+        float: left; width: 45%;
+        height: auto;
     }
     .img-disc {
-        float: right; width: 50%;
+        float: right; width: 45%;
+        height: auto;
     }
     .video {
         float: right;
-        width: 50%;
-        height: 350px
+        width: 45%;
+        height: 350px;
     }
     .img-game {
         float: left;
-        width: 50%;
+        width: 45%;
         height: 350px;
     }
     .machine-one {
         float: left;
-        width: 50%;
+        width: 45%;
         height: 360px;
     }
     .machine-two {
         float: right;
-        width: 50%;
+        width: 45%;
         height: 360px;
 
     }
     .machine-three {
+        width: 460px;
+        height: 380px;
+    }
+    .machine-three-div {
         text-align: center;
     }
     .contact-div {
@@ -179,4 +189,7 @@
     } /*make text oblique*/
     .el-span {
         color: darkgoldenrod;
+    }
+    .clear {
+        clear: both;
     }

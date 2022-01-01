@@ -4,13 +4,15 @@
     Index
 {% endblock %}
 {% block body_block %}
+<div>
 <div class="bdy-color">
-   <img src="{% static 'images/coverpicture.png' %}">
-</div>
+   <img width="100%" src="{% static 'images/coverpicture.png' %}">
+</div> 
 <div>
    <a 
    class="btn btn-block btn-lg btn-primary" 
    href="{% url 'portfolio:about' %}" role="button">View My Work &raquo;
    </a>
+</div>
 </div>
 {% endblock %}
